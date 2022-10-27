@@ -16,4 +16,6 @@ This application helps in fixing Team lunch with teammates
 
 * Run Rails app : rails server
 
+* Access it on browser: http://localhost:3000/dashboards
+
 * How to run the test suite: bundle exec rspec
