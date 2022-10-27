@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @blind_date %>
+
+<div>
+  <%= link_to "Edit this blind date", edit_blind_date_path(@blind_date) %> |
+  <%= link_to "Back to blind dates", blind_dates_path %>
+
+  <%= button_to "Destroy this blind date", @blind_date, method: :delete %>
+</div>

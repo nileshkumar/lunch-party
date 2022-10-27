@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+
+<div id="employees">
+  <% @employees.each do |employee| %>
+    <%= render employee %>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to "Back to Dashboard", dashboards_path %>
+</div>

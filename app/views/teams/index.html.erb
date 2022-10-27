@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Teams</h1>
+
+<div id="teams">
+  <% @teams.each do |team| %>
+    <%= render team %>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to "Back to Dashboard", dashboards_path %>
+</div>

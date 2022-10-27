@@ -1,0 +1,13 @@
+<div id="<%= dom_id employee %>">
+ <br />
+  <p>
+    <strong>Name:</strong>
+    <%= link_to employee.name, employee %>
+  </p>
+
+  <p>
+    <strong>Is admin?:</strong>
+    <%= employee.is_admin? ? "Yes" : "No" %>
+  </p>
+
+</div>

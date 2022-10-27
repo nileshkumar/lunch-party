@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blind Dates</h1>
+
+<div id="blind_dates">
+  <% @blind_dates.each do |blind_date| %>
+    <%= render blind_date %>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to "Back to Dashboard", dashboards_path %>
+</div>

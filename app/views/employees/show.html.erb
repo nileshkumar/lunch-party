@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+<%= link_to "Assign Employee to Team", assign_path(employee_id: @employee.id), class: "btn btn-outline-primary"%>
+
+<%= render @employee %>
+
+<div>
+  <%= link_to "Edit this employee", edit_employee_path(@employee), class:"btn btn-outline-primary" %>
+  <%= button_to "Destroy this employee", @employee, method: :delete, class:"btn btn-outline-danger" %> 
+</div><br />
+
+<div>
+  <%= link_to "Back to Dashboard", dashboards_path %>
+</div>

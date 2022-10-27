@@ -1,0 +1,2 @@
+module BlindDatesHelper
+end

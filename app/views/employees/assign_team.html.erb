@@ -1,0 +1,29 @@
+<%= form_for :employee_team do |form| %>
+  <% if @employee_team.errors.any? %>
+  <div style="color: red">
+    <h2><%= pluralize(@employee_team.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+    <ul>
+      <% @employee_team.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <div>
+    <%= form.label :lunch_date %>
+    <%= form.date_field :lunch_date %>
+  </div>
+  <br/>
+  <div>
+    <%= label_tag "team"%>
+    <%= select_tag 'team', options_for_select(@teams.collect{ |u| [u.name, u.id]}) %>
+  </div>
+  
+  <br/>
+  <div>
+    <%= hidden_field_tag 'employee_id', params[:employee_id] %>  
+    <%= form.submit @submit, class: "btn btn-outline-primary" %>
+  </div>
+<% end %>
